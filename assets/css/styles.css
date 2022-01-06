@@ -1,0 +1,53 @@
+body {
+    font-family: Inter;
+    background-image: linear-gradient(#FF988C 500px, #FF2251 800px, rgb(100 10 10));
+}
+
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px 2px rgb(0 0 0 / 35%);
+}
+
+.services .icon-box {
+    background: rgb(255 255 255 / 80%);
+    transition: transform .5s ease, box-shadow .5s ease;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+}
+
+.icon-box:hover {
+    transform: scale(1.05) translateY(-10px);
+    transform-origin: center;
+    z-index: 1;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 10px 10px 3px rgb(0 0 0 / 25%);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    cursor: default;
+}
+
+.cider-demo {
+    margin-top: 27px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 3px rgb(0 0 0 / 45%);
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.icon-box.link:hover {
+    cursor: pointer;
+}
+
+.icon-box.vue:hover::before {
+    background: #41B885;
+}
+
+.icon-box.discord:hover::before {
+    background: #5865F2;
+}
+
+.icon-box.github:hover::before {
+    background: #3F0080;
+}
+
+.icon-box:hover .title {
+    color: white;
+}
